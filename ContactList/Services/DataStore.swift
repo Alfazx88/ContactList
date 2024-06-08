@@ -9,7 +9,7 @@ final class DataStore {
     
     static let shared = DataStore()     // Now I know - they call it singleton!
     
-    var firstNames = ["Sophia",
+    let firstNames = ["Sophia",
                       "Oliver",
                       "Isabella",
                       "Noah",
@@ -25,7 +25,7 @@ final class DataStore {
                       "Logan",
                       ]
     
-    var lastNames = ["Smith",
+    let lastNames = ["Smith",
                      "Dow",
                      "Isaacson",
                      "Pennyworth",
@@ -36,7 +36,7 @@ final class DataStore {
                      "Zeiss",
                      "Hasselblade"]
     
-    var phoneNumbers = ["+49 1234567890",
+    let phoneNumbers = ["+49 1234567890",
                         "+39 9876543210",
                         "+44 7896543210",
                         "+1 2125551212",
@@ -49,7 +49,7 @@ final class DataStore {
                         "+48 500000000",
                         "+353 87654321"]
     
-    var emails = [
+    let emails = [
         "user@gmail.com",
         "customer@company.co.uk",
         "info@example-site.de",
