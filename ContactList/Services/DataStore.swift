@@ -7,7 +7,7 @@
 
 final class DataStore {
     
-    static let shared = DataStore()
+    static let shared = DataStore()     // Now I know - they call it singleton!
     
     var firstNames = ["Sophia",
                       "Oliver",
@@ -95,6 +95,6 @@ final class DataStore {
         "information@bostond.no"
     ]
     
-    private init() {
+    private init() {        // so no one could initialize it again
         }
 }
