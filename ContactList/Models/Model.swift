@@ -6,9 +6,7 @@
 //
 
 struct Person {
-    
-    let data = DataStore.shared
-    
+        
     let firstName: String
     let lastName: String
     let phoneNumber: String
@@ -23,7 +21,11 @@ struct Person {
         let data = DataStore.shared
         var contacts: [Person] = []
         
-        let contactsCount = data.firstNames.count
+        let contactsCount = min(
+            data.firstNames.count,
+            data.lastNames.count,
+            data.emails.count,
+            data.phoneNumbers.count)
         
         for item in 0..<contactsCount {
             let person = Person(
